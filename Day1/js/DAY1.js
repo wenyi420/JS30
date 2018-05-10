@@ -38,13 +38,13 @@ function removeTransition(e){
 // 將所有 class屬姓為 key的 轉成 array 並 設為變數 keys
 const keys = Array.from(document.querySelectorAll('.key'));
 
-
+// 新增 click事件監聽
 keys.forEach(key => key.addEventListener('click', playSound));
 
 // 陣列裡的每個 key 新增監聽事件功能 addEventListener , 監聽動畫結束時 執行 移除動畫
 keys.forEach(key => key.addEventListener('transitionend',removeTransition));
 
-// 新增 click事件監聽
+
 
 
 
