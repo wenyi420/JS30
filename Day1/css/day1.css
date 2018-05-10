@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	box-sizing: border-box;
+	margin:0;
+
+}
+body{
+
+	background: url(https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b3ead7d2589717f5e1449373f47426e2&auto=format&fit=crop&w=741&q=80) no-repeat center center;
+	background-size: cover;
+
+}
+.keys{
+	display: flex; /*要使用flex要在元素內先宣告flex*/
+    flex: 1; /*這是一個簡寫，全部為flex: flex-grow｜flex-shrink｜flex-basis*/
+    min-height: 100vh; /*vh代表view height, 百分比呈現*/
+    align-items: center; /*宣告為flex後才有效的屬性，垂直置中*/
+    justify-content: center;/*宣告為flex後才有效的屬性，水平置中*/
+	text-align: center; 
+	
+	
+}
+
+div h3 {
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+}
+
+.key{
+	font-size: 1.5em;
+	transition: 0.07s;
+	color: white;
+	border:3px solid black;
+	border-radius: 15px;
+	margin:0 20px;
+}
+
+span {
+	display: block;
+}
+
+
+.playing{
+  transform: scale(3);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
